@@ -18,7 +18,7 @@ module.exports = {
   "24/7": true, //If you want the bot to be stay in the vc 24/7
   CookieSecret: "Pikachu is cute", //A Secret like a password
   IconURL:
-    "https://i.imgur.com/TAxleVn.png", //URL of all embed author icons | Dont edit unless you dont need that Music CD Spining
+    "https://i.imgur.com/TAxleVn.png", //URL of all embed author icon
   Permissions: 2205280576, //Bot Inviting Permissions
   Website: process.env.Website || "http://localhost", //Website where it was hosted at includes http or https || Use "0.0.0.0" if you using Heroku
 
@@ -31,16 +31,6 @@ module.exports = {
     secure: false, // Set this to true if you're self-hosting lavalink on replit.
   },
   
-  //Alternate Lavalink
-  /*
-  Lavalink: {
-    id: "Main",
-    host: "lava.sudhan.tech",
-    port: 1234,
-    pass: "CodingWithSudhan", 
-    secure: false // Set this to true if you're self-hosting lavalink on replit.
-  },
-  */
 
   //Please go to https://developer.spotify.com/dashboard/
   Spotify: {
