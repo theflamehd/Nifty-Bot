@@ -1,9 +1,3 @@
-const TOKEN = process.env['TOKEN']
-const CLIENTID = process.env['CLIENTID']
-const CLIENTSECRET = process.env['CLIENTSECRET']
-
-
-
 module.exports = {
   Admins: ["589773984447463434"], //Admins of the bot
   ExpressServer: false,//If you wanted to make the website run or not
