@@ -1,7 +1,6 @@
 <h1 align="center"><img src="https://i.imgur.com/pqerUy7.gif" width="30px"> Discord Music Bot <img src="https://i.imgur.com/pqerUy7.gif" width="30px"></h1>
-
-
-![Main](https://i.imgur.com/zJJVrwX.png) 
+<br>
+<img src="https://i.imgur.com/zJJVrwX.png" width="50px">
 
 
 [![Downloads](https://img.shields.io/github/downloads/theflamehd/Nifty-Bot/total.svg)](https://github.com/theflamehd/Nifty-Bot/releases/latest)
