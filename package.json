@@ -43,6 +43,7 @@
     "moment": "^2.29.1",
     "moment-duration-format": "^2.3.2",
     "mongoose": "^5.12.3",
+    "mpath": ">=0.8.4",
     "node-fetch": "^2.6.1",
     "passport": "^0.4.1",
     "passport-discord": "^0.1.4",
@@ -51,6 +52,7 @@
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "prettier": "2.3.2"
+    "prettier": "2.3.2",
+    "mpath": ">=0.8.4"
   }
 }
