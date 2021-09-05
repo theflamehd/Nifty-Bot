@@ -4,5 +4,5 @@ const keepAlive = require("./server.js")
 
 keepAlive();
 client.build();
-keepAlive();
+
 module.exports = client; //;-;

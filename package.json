@@ -22,12 +22,12 @@
     "music",
     "discord-music"
   ],
-  "author": "SudhanPlayz",
-  "license": "SEE LICENSE IN LICENSE",
+  "author": "theflamehd",
+  "license": "Not specified",
   "bugs": {
-    "url": "https://github.com/SudhanPlayz/Discord-MusicBot/issues"
+    "url": "https://github.com/theflamehd/Nifty-Bot/issues"
   },
-  "homepage": "https://github.com/SudhanPlayz/Discord-MusicBot#readme",
+  "homepage": "https://github.com/theflamehd/Nifty-Bot#readme",
   "dependencies": {
     "colors": "^1.4.0",
     "cpu-stat": "^2.0.1",

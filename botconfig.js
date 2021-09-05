@@ -18,7 +18,7 @@ module.exports = {
   "24/7": true, //If you want the bot to be stay in the vc 24/7
   CookieSecret: "Pikachu is cute", //A Secret like a password
   IconURL:
-    "https://i.imgur.com/TAxleVn.png", //URL of all embed author icon
+    "https://i.imgur.com/pqerUy7.gif", //URL of all embed author icon
   Permissions: 2205280576, //Bot Inviting Permissions
   Website: process.env.Website || "http://localhost", //Website where it was hosted at includes http or https || Use "0.0.0.0" if you using Heroku
 
