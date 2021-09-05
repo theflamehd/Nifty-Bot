@@ -3,7 +3,6 @@
 [![Downloads](https://img.shields.io/github/downloads/theflamehd/Nifty-Bot/total.svg)](https://github.com/theflamehd/Nifty-Bot/releases/latest)
 [![Stars](https://img.shields.io/github/stars/theflamehd/Nifty-Bot.svg)](https://github.com/jagrosh/Nifty-Bot/stargazers)
 [![Release](https://img.shields.io/github/release/theflamehd/Nifty-Bot.svg)](https://github.com/theflamehd/Nifty-Bot/releases/latest)
-[![License](https://img.shields.io/github/license/theflamehd/Nifty-Bot.svg)](https://github.com/theflamehd/Nifty-Bot/blob/master/LICENSE)
 
 [![CircleCI](https://img.shields.io/circleci/project/github/theflamehd/Nifty-Bot/master.svg)](https://circleci.com/gh/theflamehd/Nifty-Bot)
 [![CodeFactor](https://www.codefactor.io/repository/github/theflamehd/Nifty-Bot/badge)](https://www.codefactor.io/repository/github/theflamehd/Nifty-Bot)
