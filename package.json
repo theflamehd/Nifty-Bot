@@ -1,7 +1,7 @@
 {
-  "name": "discord-musicbot",
-  "version": "4.1.1",
-  "description": "Very simple discord music bot with the discord.js with Song Name playing. It can able to play music with the song name",
+  "name": "Nifty",
+  "version": "4.1.2",
+  "description": "A simple discord music bot to play music in your Discord voice channel.",
   "main": "index.js",
   "scripts": {
     "install-node-v14": "wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash && export NVM_DIR=\"$([ -z \"${XDG_CONFIG_HOME-}\" ] && printf %s \"${HOME}/.nvm\" || printf %s \"${XDG_CONFIG_HOME}/nvm\")\" && [ -s \"$NVM_DIR/nvm.sh\" ] && \\. \"$NVM_DIR/nvm.sh\" && nvm install 14 && nvm use 14",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SudhanPlayz/Discord-MusicBot.git"
+    "url": "git+https://github.com/thedlamehd/Nifty-Bot.git"
   },
   "engines": {
     "node": "14.x"
