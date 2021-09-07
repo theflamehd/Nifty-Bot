@@ -11,8 +11,8 @@ const Logger = require("./Logger");
 const prettyMilliseconds = require("pretty-ms");
 
 //Class extending Stuff
-require("discordjs-activity"); //Epic Package, For more details: https://www.npmjs.com/package/discordjs-activity
-require("./EpicPlayer"); //idk why im doing but i wanna learn something new so...
+require("discordjs-activity");
+require("./EpicPlayer"); 
 
 class DiscordMusicBot extends Client {
   constructor(props) {
@@ -24,7 +24,7 @@ class DiscordMusicBot extends Client {
     this.SongsPlayed = 0;
 
     this.database = {
-      //Saved at jsoning node_modules directory, DOCS: https://jsoning.js.org/
+      
       guild: new Jsoning("guild.json"), //Server Config
     };
     this.logger = new Logger(path.join(__dirname, "..", "Logs.log"));
@@ -67,7 +67,7 @@ class DiscordMusicBot extends Client {
 
     this.Ready = false;
 
-    //idk where do i do it so i did it here ;-;
+   
     this.ws.on("INTERACTION_CREATE", async (interaction) => {
       let GuildDB = await this.GetGuild(interaction.guild_id);
 
@@ -83,7 +83,6 @@ class DiscordMusicBot extends Client {
       const command = interaction.data.name.toLowerCase();
       const args = interaction.data.options;
 
-      //Easy to send respnose so ;)
       interaction.guild = await this.guilds.fetch(interaction.guild_id);
       interaction.send = async (message) => {
         return await this.api
@@ -106,7 +105,6 @@ class DiscordMusicBot extends Client {
         cmd.SlashCommand.run(this, interaction, args, { GuildDB });
     });
 
-    //because not worked lol ;-;
     const client = this;
 
     this.Lavasfy = new LavasfyClient(
@@ -234,7 +232,7 @@ class DiscordMusicBot extends Client {
       .setColor("RED")
       .setDescription(Error)
       .setFooter(
-        "If you think this as a bug, please report it in the support server!"
+        "If you think this as a bug, please report it !"
       );
 
     Channel.send(embed);

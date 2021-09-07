@@ -9,13 +9,7 @@ module.exports = {
     member: ["ADMINISTRATOR"],
   },
   aliases: ["conf"],
-  /**
-   *
-   * @param {import("../structures/DiscordMusicBot")} client
-   * @param {import("discord.js").Message} message
-   * @param {string[]} args
-   * @param {*} param3
-   */
+  
   run: async (client, message, args, { GuildDB }) => {
     let Config = new MessageEmbed()
       .setAuthor("Server Config", client.botconfig.IconURL)
@@ -50,8 +44,8 @@ What would you like to edit?
     } catch {
       isOk = true;
     }
-    if (isOk) return; //im idiot sry ;-;
-    /**@type {MessageReaction} */
+    if (isOk) return; 
+    
     let em = emoji;
     ConfigMessage.reactions.removeAll();
     if (em._emoji.name === "1️⃣") {
@@ -132,19 +126,13 @@ What would you like to edit?
         ],
       },
     ],
-    /**
-       *
-       * @param {import("../structures/DiscordMusicBot")} client
-       * @param {import("discord.js").Message} message
-       * @param {string[]} args
-       * @param {*} param3
-       */
+    
     run: async (client, interaction, args, { GuildDB }) => {
       let config = interaction.data.options[0].name;
       let member = await interaction.guild.members.fetch(interaction.user_id);
-      //TODO: if no admin perms return...
+      
       if (config === "prefix") {
-        //prefix stuff
+        
         if (
           interaction.data.options[0].options &&
           interaction.data.options[0].options[0]
@@ -177,9 +165,7 @@ What would you like to edit?
             interaction, `Successfully changed the DJ role of this server to ${role.name}`
           );
         } else {
-          /**
-           * @type {require("discord.js").Role}
-           */
+          
           let role = interaction.guild.roles.cache.get(GuildDB.DJ);
           client.sendTime(interaction, `The DJ role of this server is ${role.name}`);
         }

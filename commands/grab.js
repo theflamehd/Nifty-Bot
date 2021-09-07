@@ -10,13 +10,7 @@ module.exports = {
     member: [],
   },
   aliases: ["save"],
-/**
-*
-* @param {import("../structures/DiscordMusicBot")} client
-* @param {import("discord.js").Message} message
-* @param {string[]} args
-* @param {*} param3
-*/
+
 run: async (client, message, args, { GuildDB }) => {
   let player = await client.Manager.get(message.guild.id);
   if (!player) return client.sendTime(message.channel, "❌ | **Nothing is playing right now...**");
@@ -45,13 +39,7 @@ run: async (client, message, args, { GuildDB }) => {
     client.sendTime(message.channel, "✅ | **Check your DMs!**")
   },
   SlashCommand: {
-/**
-*
-* @param {import("../structures/DiscordMusicBot")} client
-* @param {import("discord.js").Message} message
-* @param {string[]} args
-* @param {*} param3
-*/
+
   run: async (client, interaction, args, { GuildDB }) => {
     const guild = client.guilds.cache.get(interaction.guild_id);
     const user = client.users.cache.get(interaction.member.user.id);

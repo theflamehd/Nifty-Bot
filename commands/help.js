@@ -9,13 +9,7 @@ module.exports = {
     member: [],
   },
   aliases: ["command", "commands", "cmd"],
-  /**
-   *
-   * @param {import("../structures/DiscordMusicBot")} client
-   * @param {import("discord.js").Message} message
-   * @param {string[]} args
-   * @param {*} param3
-   */
+  
    run: async (client, message, args, { GuildDB }) => {
     let Commands = client.commands.map(
       (cmd) =>
@@ -89,13 +83,7 @@ SlashCommand: {
         required: false
       },
     ],
-    /**
-   *
-   * @param {import("../structures/DiscordMusicBot")} client
-   * @param {import("discord.js").Message} message
-   * @param {string[]} args
-   * @param {*} param3
-   */
+   
 
     run: async (client, interaction, args, { GuildDB }) => {
       let Commands = client.commands.map(

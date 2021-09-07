@@ -10,13 +10,7 @@ module.exports = {
     member: [],
   },
   aliases: ["st"],
-  /**
-   *
-   * @param {import("../structures/DiscordMusicBot")} client
-   * @param {import("discord.js").Message} message
-   * @param {string[]} args
-   * @param {*} param3
-   */
+ 
   run: async (client, message, args, { GuildDB }) => {
     const player = client.Manager.create({
       guild: message.guild.id,
@@ -54,13 +48,7 @@ module.exports = {
         description: "Skips to a specific song in the queue",
       },
     ],
-    /**
-     *
-     * @param {import("../structures/DiscordMusicBot")} client
-     * @param {import("discord.js").Message} message
-     * @param {string[]} args
-     * @param {*} param3
-     */
+  
     run: async (client, interaction, args, { GuildDB }) => {
       const guild = client.guilds.cache.get(interaction.guild_id);
       const member = guild.members.cache.get(interaction.member.user.id);

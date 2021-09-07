@@ -1,20 +1,20 @@
 module.exports = {
-  Admins: ["589773984447463434"], //Admins of the bot
-  ExpressServer: false,//If you wanted to make the website run or not
-  DefaultPrefix: process.env.Prefix || "!n ", //Default prefix, Server Admins can change the prefix
-  Port: 3000, //Which port website gonna be hosted
-  SupportServer: "https://discord.gg/DDshy3AHnX", //Support Server Link
-  Token: process.env.Token ||  process.env['TOKEN'], //Discord Bot Token
-  ClientID: process.env.Discord_ClientID || process.env['CLIENTID'], //Discord Client ID
-  ClientSecret: process.env.Discord_ClientSecret || process.env['CLIENTSECRET'], //Discord Client Secret
-  Scopes: ["identify", "guilds", "applications.commands"], //Discord OAuth2 Scopes
-  CallbackURL: "/api/callback", //Discord OAuth2 Callback URL
-  "24/7": true, //If you want the bot to be stay in the vc 24/7
-  CookieSecret: "Pikachu is cute", //A Secret like a password
+  Admins: ["589773984447463434"], 
+  ExpressServer: false,//website run or not
+  DefaultPrefix: process.env.Prefix || "!n ", //Default prefix
+  Port: 3000, //port of website
+  SupportServer: "https://discord.gg/DDshy3AHnX", 
+  Token: process.env.Token ||  process.env['TOKEN'], 
+  ClientID: process.env.Discord_ClientID || process.env['CLIENTID'], 
+  ClientSecret: process.env.Discord_ClientSecret || process.env['CLIENTSECRET'], 
+  Scopes: ["identify", "guilds", "applications.commands"], 
+  CallbackURL: "/api/callback", 
+  "24/7": true, 
+  CookieSecret: "Pikachu is cute", 
   IconURL:
     "https://i.imgur.com/pqerUy7.gif", //URL of all embed author icon
-  Permissions: 2205280576, //Bot Inviting Permissions
-  Website: process.env.Website || "http://localhost", //Website where it was hosted at includes http or https || Use "0.0.0.0" if you using Heroku
+  Permissions: 2205280576, 
+  Website: process.env.Website || "http://localhost", //Website where it was hosted
 
   //Lavalink
    Lavalink: {
@@ -22,11 +22,11 @@ module.exports = {
     host: "lava.link",
     port: 80,
     pass: "youshallnotpass", 
-    secure: false, // Set this to true if you're self-hosting lavalink on replit.
+    secure: false, 
   },
   
 
-  //Please go to https://developer.spotify.com/dashboard/ (Not needed)
+  //https://developer.spotify.com/dashboard/ (Not needed)
   Spotify: {
     ClientID: process.env.Spotify_ClientID || "", //Spotify Client ID
     ClientSecret: process.env.Spotify_ClientSecret || "", //Spotify Client Secret

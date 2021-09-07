@@ -1,10 +1,3 @@
-/**
- *
- * @param {require("../structures/DiscordMusicBot")} client
- * @param {require("discord.js").Message} message
- * @returns {void} aka: nothing ;-;
- */
-
 module.exports = async (client, message) => {
   if (message.author.bot || message.channel.type === "dm") return;
   let prefix = client.botconfig.DefaultPrefix;
@@ -21,7 +14,7 @@ module.exports = async (client, message) => {
     GuildDB = await client.GetGuild(message.guild.id);
   }
 
-  //Prefixes also have mention match
+  //Prefixes
   const prefixMention = new RegExp(`^<@!?${client.user.id}> `);
   prefix = message.content.match(prefixMention)
     ? message.content.match(prefixMention)[0]
@@ -30,7 +23,7 @@ module.exports = async (client, message) => {
   if (message.content.indexOf(prefix) !== 0) return;
 
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
-  //Making the command lowerCase because our file name will be in lowerCase
+  
   const command = args.shift().toLowerCase();
 
   //Searching a command
@@ -38,7 +31,7 @@ module.exports = async (client, message) => {
     client.commands.get(command) ||
     client.commands.find((x) => x.aliases && x.aliases.includes(command));
 
-  //Executing the codes when we get the command or aliases
+  //Executing the codes
   if (cmd) {
     if (
       (cmd.permissions &&

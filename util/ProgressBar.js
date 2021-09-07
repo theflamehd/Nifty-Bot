@@ -1,10 +1,3 @@
-/**
- * Create a text progress bar
- * @param {Number} value - The value to fill the bar
- * @param {Number} maxValue - The max value of the bar
- * @param {Number} size - The bar size (in letters)
- * @return {{Bar: string, percentageText: string}} - The bar
- */
 module.exports = (value, maxValue, size) => {
   const percentage = value / maxValue; // Calculate the percentage of the bar
   const progress = Math.round(size * percentage); // Calculate the number of square caracters to fill the progress side.

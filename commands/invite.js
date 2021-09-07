@@ -9,13 +9,7 @@ module.exports = {
     member: [],
   },
   aliases: ["inv"],
-  /**
-   *
-   * @param {import("../structures/DiscordMusicBot")} client
-   * @param {import("discord.js").Message} message
-   * @param {string[]} args
-   * @param {*} param3
-   */
+ 
   run: async (client, message, args, { GuildDB }) => {
     let embed = new MessageEmbed()
       .setAuthor(
@@ -35,13 +29,7 @@ module.exports = {
     message.channel.send(embed);
   },
   SlashCommand: {
-    /**
-   *
-   * @param {import("../structures/DiscordMusicBot")} client
-   * @param {import("discord.js").Message} message
-   * @param {string[]} args
-   * @param {*} param3
-   */
+    
   run: async (client, interaction, args, { GuildDB }) => {
     let embed = new MessageEmbed()
       .setAuthor(

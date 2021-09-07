@@ -12,13 +12,7 @@ module.exports = {
     member: [],
   },
   aliases: ["se"],
-  /**
-   *
-   * @param {import("../structures/DiscordMusicBot")} client
-   * @param {import("discord.js").Message} message
-   * @param {string[]} args
-   * @param {*} param3
-   */
+ 
   run: async (client, message, args, { GuildDB }) => {
     if (!message.member.voice.channel)
       return client.sendTime(
@@ -145,13 +139,7 @@ module.exports = {
         description: "Enter the song name or url you want to search",
       },
     ],
-    /**
-     *
-     * @param {import("../structures/DiscordMusicBot")} client
-     * @param {import("discord.js").Message} message
-     * @param {string[]} args
-     * @param {*} param3
-     */
+  
     run: async (client, interaction, args, { GuildDB }) => {
       const guild = client.guilds.cache.get(interaction.guild_id);
       const member = guild.members.cache.get(interaction.member.user.id);

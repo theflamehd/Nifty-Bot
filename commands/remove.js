@@ -11,13 +11,7 @@ const { TrackUtils } = require("erela.js");
     },
     aliases: ["rm"],
 
-    /**
-   *
-   * @param {import("../structures/DiscordMusicBot")} client
-   * @param {import("discord.js").Message} message
-   * @param {string[]} args
-   * @param {*} param3
-   */
+  
   run: async (client, message, args, { GuildDB }) => {
     let player = await client.Manager.players.get(message.guild.id);
     const song = player.queue.slice(args[0] - 1, 1); 
@@ -47,13 +41,7 @@ const { TrackUtils } = require("erela.js");
           description: "Remove a song from the queue",
       },
   ],
-  /**
-   *
-   * @param {import("../structures/DiscordMusicBot")} client
-   * @param {import("discord.js").Message} message
-   * @param {string[]} args
-   * @param {*} param3
-   */
+  
     run: async (client, interaction, args, { GuildDB }) => {
       let player = await client.Manager.get(interaction.guild_id);
       const guild = client.guilds.cache.get(interaction.guild_id);

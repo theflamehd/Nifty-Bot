@@ -11,13 +11,7 @@ module.exports = {
     member: [],
   },
   aliases: ["q"],
-  /**
-   *
-   * @param {import("../structures/DiscordMusicBot")} client
-   * @param {import("discord.js").Message} message
-   * @param {string[]} args
-   * @param {*} param3
-   */
+  
   run: async (client, message, args, { GuildDB }) => {
     let player = await client.Manager.get(message.guild.id);
     if (!player)
@@ -109,24 +103,7 @@ module.exports = {
     else client.Pagination(message, Pages);
   },
   SlashCommand: {
-    /*
-    options: [
-      {
-          name: "page",
-          value: "[page]",
-          type: 4,
-          required: false,
-          description: "Enter the page of the queue you would like to view",
-      },
-  ],
-  */
-    /**
-     *
-     * @param {import("../structures/DiscordMusicBot")} client
-     * @param {import("discord.js").Message} message
-     * @param {string[]} args
-     * @param {*} param3
-     */
+   
     run: async (client, interaction, args, { GuildDB }) => {
       let player = await client.Manager.get(interaction.guild_id);
       if (!player)

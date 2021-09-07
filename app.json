@@ -1,8 +1,8 @@
 {
   "name": "Discord-MusicBot",
-  "description": "Very simple discord music bot with the discord.js with Song Name playing. It can able to play music with the song name",
-  "repository": "https://github.com/SudhanPlayz/Discord-MusicBot",
-  "logo": "https://cdn.discordapp.com/avatars/750613142488481843/e6326038dbe2243ca551ba5b6ecd8bf2.png?size=1024",
+  "description": "Nifty is a Discord Music Bot which plays requested songs from YouTube and other services in a Discord Voice Channel",
+  "repository": "https://github.com/theflamehd/Nifty-Bot",
+  "logo": "https://avatars.githubusercontent.com/u/46400905?v=4",
   "keywords": ["node", "discord", "youtube", "music", "bot", "lavalink", "dashboard"],
   "image": "heroku/nodejs",
   "buildpacks": [

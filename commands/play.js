@@ -11,13 +11,7 @@ module.exports = {
         member: [],
     },
     aliases: ["p"],
-    /**
-     *
-     * @param {import("../structures/DiscordMusicBot")} client
-     * @param {import("discord.js").Message} message
-     * @param {string[]} args
-     * @param {*} param3
-     */
+    
     run: async (client, message, args, { GuildDB }) => {
         if (!message.member.voice.channel) return client.sendTime(message.channel, "❌ | **You must be in a voice channel to play something!**");
         if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return client.sendTime(message.channel, ":x: | **You must be in the same voice channel as me to use this command!**");
@@ -111,13 +105,7 @@ module.exports = {
                 description: "Play music in the voice channel",
             },
         ],
-        /**
-         *
-         * @param {import("../structures/DiscordMusicBot")} client
-         * @param {import("discord.js").Message} message
-         * @param {string[]} args
-         * @param {*} param3
-         */
+        
         run: async (client, interaction, args, { GuildDB }) => {
             const guild = client.guilds.cache.get(interaction.guild_id);
             const member = guild.members.cache.get(interaction.member.user.id);
