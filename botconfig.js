@@ -10,7 +10,7 @@ module.exports = {
   Scopes: ["identify", "guilds", "applications.commands"], 
   CallbackURL: "/api/callback", 
   "24/7": true, 
-  CookieSecret: "Pikachu is cute", 
+  CookieSecret: process.env['CSECRET'], 
   IconURL:
     "https://i.imgur.com/pqerUy7.gif", //URL of all embed author icon
   Permissions: 2205280576, 
