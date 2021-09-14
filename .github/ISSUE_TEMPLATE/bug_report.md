@@ -6,7 +6,6 @@ title: ''
 labels: 's: unverified, type: bug'
 assignees: ''
 ---
-<!-- Use Discord for questions: https://discord.gg/sbySMS7m3v -->
 
 **Please describe the problem you are having in as much detail as possible:**
 
@@ -28,9 +27,3 @@ assignees: ''
 - partials: none
 - gateway intents: none
 - other: none
-
-<!--
-Remove the comment and fill out the commit hash if this applies to you:
-(While it's not a requirement to test your issue on the master branch, it would make fixing the problem a lot easier for us, so please do so if possible.)
-
--->
