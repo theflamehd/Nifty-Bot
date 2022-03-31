@@ -31,28 +31,28 @@
   "dependencies": {
     "colors": "^1.4.0",
     "cpu-stat": "^2.0.1",
-    "discord.js": "^12.5.3",
-    "discordjs-activity": "1.2.0",
-    "erela.js": "^2.3.2",
-    "express": "^4.17.1",
-    "express-session": "^1.17.1",
-    "jsoning": "^0.11.0",
-    "lavasfy": "2.1.2",
+    "discord.js": "^13.6.0",
+    "discordjs-activity": "1.4.2",
+    "erela.js": "^2.3.3",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "jsoning": "^0.13.23",
+    "lavasfy": "2.3.0",
     "lodash": "^4.17.21",
     "lyrics-finder": "^21.7.0",
     "moment": "^2.29.1",
     "moment-duration-format": "^2.3.2",
-    "mongoose": "^5.12.3",
+    "mongoose": "^6.2.9",
     "mpath": ">=0.8.4",
-    "node-fetch": "^2.6.1",
-    "passport": "^0.4.1",
+    "node-fetch": "^3.2.3",
+    "passport": "^0.5.2",
     "passport-discord": "^0.1.4",
     "pretty-ms": "^7.0.1",
-    "socket.io": "^4.0.1",
-    "winston": "^3.3.3"
+    "socket.io": "^4.4.1",
+    "winston": "^3.6.0"
   },
   "devDependencies": {
-    "prettier": "2.3.2",
+    "prettier": "2.6.1",
     "mpath": ">=0.8.4"
   }
 }
