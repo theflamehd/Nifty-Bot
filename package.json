@@ -44,8 +44,13 @@
     "moment-duration-format": "^2.3.2",
     "mongoose": "^6.2.9",
     "mpath": ">=0.8.4",
+<<<<<<< HEAD
     "node-fetch": "^3.2.3",
     "passport": "^0.5.2",
+=======
+    "node-fetch": "^2.6.7",
+    "passport": "^0.4.1",
+>>>>>>> origin/master
     "passport-discord": "^0.1.4",
     "pretty-ms": "^7.0.1",
     "socket.io": "^4.4.1",
